@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>December</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #5e5e5e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            border: none;
+            font-size: 16px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button:hover {
+            background-color: #454545;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .days {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #day-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+
+        .day {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            color: #333;
+        }
+
+        .day a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .green {
+            background-color: rgb(180, 211, 180);
+        }
+
+        .red {
+            background-color: rgb(211, 180, 180);
+        }
+
+        .day i {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600px) {
+            #day-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+                justify-items: center;
+                align-items: center;
+                max-width: 100%; 
+                overflow-y: auto;
+                max-height: 80vh;
+            }
+
+            .day {
+                font-size: 0.9rem; 
+                height: 40px; 
+                padding: 5px; 
+            }
+
+            .back-button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding-top: 20px; 
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center; 
+                align-items: center;
+            }
+        }
+
+        /* For very small mobile screens (below 400px) */
+        @media (max-width: 400px) {
+            #day-grid {
+                grid-template-columns: repeat(3, 1fr); 
+            }
+
+            .day {
+                font-size: 0.8rem;
+                height: 35px; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Back</a>
+    <div class="container">
+        <div class="days">
+            <h2>December 2024</h2>
+            <p>Select a day to view its trade details.</p>
+            <div id="day-grid">
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day green"><a href="dec17.html"><i><b>+2 R</b></i>17</a></div>
+                <div class="day green"><a href="dec18.html"><i><b>+2 R</b></i>18</a></div>
+                <div class="day green"><a href="dec19.html"><i><b>+.4 R</b></i>19</a></div>
+                <div class="day red"><a href="dec20.html"><i><b>-1 R</b></i>20</a></div>
+                <div class="day"><a href="dec21.html">21</a></div>
+                <div class="day"><a href="dec22.html">22</a></div>
+                <div class="day"><a href="dec23.html">23</a></div>
+                <div class="day green"><a href="dec24.html"><i><b>+1 R</b></i>24</a></div>
+                <div class="day"><a href="dec25.html">25</a></div>
+                <div class="day green"><a href="dec26.html"><i><b>+1.25 R</b></i>26</a></div>
+                <div class="day"><a href="dec27.html">27</a></div>
+                <div class="day"><a href="dec28.html">28</a></div>
+                <div class="day green"><a href="dec29.html"><i><b>+1 R</b></i>29</a></div>
+                <div class="day green"><a href="dec30.html"><i><b>+1.25 R</b></i>30</a></div>
+                <div class="day red"><a href="dec31.html"><i><b>-1 R</b></i>31</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
